@@ -36,3 +36,7 @@ const headerLogoConatiner = document.querySelector('.header__logo-container')
 headerLogoConatiner.addEventListener('click', () => {
   location.href = 'index.html'
 })
+window.onload = function () {
+  GitHubCalendar(".calendar", "Akash07032001");
+  GitHubCalendar(".calendar", "Akash07032001", { responsive: true });
+}

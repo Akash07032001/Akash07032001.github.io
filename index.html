@@ -15,6 +15,7 @@
       href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700;900&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css" />
   </head>
   <body>
     <header class="header">
@@ -34,9 +35,9 @@
             <li class="header__link-wrapper">
               <a href="./index.html" class="header__link"> Home </a>
             </li>
-            <li class="header__link-wrapper">
+            <!-- <li class="header__link-wrapper">
               <a href="./index.html#about" class="header__link">About </a>
-            </li>
+            </li> -->
             <li class="header__link-wrapper">
               <a href="./index.html#projects" class="header__link">
                 Projects
@@ -44,6 +45,12 @@
             </li>
             <li class="header__link-wrapper">
               <a href="./index.html#contact" class="header__link"> Contact </a>
+            </li>
+            <li class="header__link-wrapper">
+              <a href="./index.html#about" class="header__link"> Skill </a>
+            </li>
+            <li class="header__link-wrapper">
+              <a href="/assets/Akash-Kumar-Resume.pdf" download="Akash_kumar_Resume" target="_blank" onclick="window.open(`https://drive.google.com/file/d/1ZVOTSukVxAaL8TRvJSajIiABp09LH949/view`)" class="header__link">RESUME</a>
             </li>
           </ul>
           <div class="header__main-ham-menu-cont">
@@ -76,25 +83,25 @@
             </li>
 
             <li class="header__sm-menu-link">
-              <a href="./index.html#contact"> Contact </a>
+              <a href="./index.html#contact"> Conact </a>
             </li>
+            
           </ul>
         </div>
       </div>
     </header>
     <section class="home-hero">
-      <div class="home-hero__content">
-        <h1 class="heading-primary">Hey, My name is Akash Kumar</h1>
+      <div class="home-hero__content" class="akash_img">
+        <img src="./assets/png/Picsart_22-10-19_15-17-44-069.png" class="about_me_img" />
+        <h1 class="heading-primary">I am Akash Kumar</h1>
         <div class="home-hero__info">
           <p class="text-primary">
-            A self-motivated,hard-working and ambitious Java
-            Developer with proficiency in Java problem-solving
-            mindset and the ability to perform well in
-            collaboration.
+            As a self-motivated aspiring JAVA Back-End Developer, Constantly seeking out new challenges and opportunities to expand my skills and knowledge in the field. Passionate about building robust design systems, developing RESTful API, and Dedicated to staying up-to-date with the latest Java Back-End development technologies and techniques.
+                    
           </p>
         </div>
         <div class="home-hero__cta">
-          <a href="./#projects" class="btn btn--bg">Projects</a>
+          <a href="/assets/Akash-Kumar-Resume.pdf" download="Akash_kumar_Resume" target="_blank" onclick="window.open(`https://drive.google.com/file/d/1ZVOTSukVxAaL8TRvJSajIiABp09LH949/view`)" class="btn btn--bg">RESUME</a>
         </div>
       </div>
       <div class="home-hero__socials">
@@ -147,9 +154,9 @@
           </a>
         </div>
       </div>
-      <div class="home-hero__mouse-scroll-cont">
+      <!-- <div class="home-hero__mouse-scroll-cont">
         <div class="mouse"></div>
-      </div>
+      </div> -->
     </section>
     <section id="about" class="about sec-pad">
       <div class="main-container">
@@ -189,7 +196,7 @@ about coding with a specialization in Java,SQL and Data Structure and Algoritham
           </div>
           <div class="about__content-skills">
             <h3 class="about__content-title">My Skills</h3>
-            <div class="skills">
+            <div class="skills" id="skill">
               <div class="skills__skill">HTML</div>
               <div class="skills__skill">CSS</div>
               <div class="skills__skill">JavaScript</div>
@@ -228,18 +235,28 @@ about coding with a specialization in Java,SQL and Data Structure and Algoritham
               />
             </div>
             <div class="projects__row-content">
-              <h3 class="projects__row-content-title">Project 1</h3>
+              <h2 class="projects__row-content-title">OutLook.india</h2>
               <p class="projects__row-content-desc">
                 Outlook is India's most credible current affairs and news magazine
                 It features contents from politics, sports, cinema,stories
                 and magazine section is the spacial station 
               </p>
-              <a
-                href="./project-1.html"
+              <h3 class="project_tech">Tech Stack</h3>
+              <p class="projects__row-content-desc">HTML, CSS, JavaScript</p>
+              <div class="project_div">
+                <a
+                href="https://github.com/arpitkumarsahu/DemoOutlook"
                 class="btn btn--med btn--theme dynamicBgClr"
                 target="_blank"
-                >Case Study</a
+                >Git</a
               >
+              <a
+                href="https://papaya-crisp-641645.netlify.app/"
+                class="btn btn--med btn--theme dynamicBgClr"
+                target="_blank"
+                >Live</a
+              >
+              </div>
             </div>
           </div>
           <div class="projects__row">
@@ -252,18 +269,64 @@ about coding with a specialization in Java,SQL and Data Structure and Algoritham
               />
             </div>
             <div class="projects__row-content">
-              <h3 class="projects__row-content-title">Project 2</h3>
+              <h3 class="projects__row-content-title">Kimaye.in</h3>
               <p class="projects__row-content-desc">
                Kimay is the frash fruit store for frash fruits and also fruit salid with in good price .
               </p>
-              <a
-                href="./project-2.html"
+              <h3 class="project_tech" >Tech Stack</h3>
+              <p class="projects__row-content-desc">HTML, CSS, JavaScript</p>
+              <div class="project_div">
+                <a
+                href="https://github.com/jagtapyogesh41/Kimaye_clone"
                 class="btn btn--med btn--theme dynamicBgClr"
                 target="_blank"
-                >Case Study</a
+                >Git</a
               >
+              <a
+                href="https://zesty-alpaca-5eff78.netlify.app/"
+                class="btn btn--med btn--theme dynamicBgClr"
+                target="_blank"
+                >Live</a
+              >
+              </div>
             </div>
+            
           </div>
+          <div class="projects__row">
+            <div class="projects__row-img-cont">
+              <img
+                src="./assets/png/Property Real Estate logo.png"
+                alt="Software Screenshot"
+                class="projects__row-img"
+                loading="lazy"
+              />
+            </div>
+            <!-- /////new -->
+            <div class="projects__row-content">
+              <h3 class="projects__row-content-title">Hey Broker</h3>
+              <p class="projects__row-content-desc">
+                HeyBroker.com is an Web server application which is used by admin , Broker and their Customer for Real Estate properties. We have created it's APIs.
+              </p>
+              <h3 class="project_tech" >Tech Stack</h3>
+              <p class="projects__row-content-desc">Java, Maven, Spring Boot, MySql, Spring Jpa, Swagger-UI </p>
+              <div class="project_div">
+                <a
+                href="https://github.com/Akash07032001/astute-tank-3790"
+                class="btn btn--med btn--theme dynamicBgClr"
+                target="_blank"
+                >Git</a
+              >
+              <a
+                href="https://drive.google.com/file/d/175nsTmXNHvX4W8glWowhO1q6da1ztnPS/view"
+                class="btn btn--med btn--theme dynamicBgClr"
+                target="_blank"
+                >Live</a
+              >
+              </div>
+            </div>
+            
+          </div>
+
           <!-- <div class="projects__row">
             <div class="projects__row-img-cont">
               <img
@@ -291,6 +354,28 @@ about coding with a specialization in Java,SQL and Data Structure and Algoritham
         </div>
       </div>
     </section>
+
+     <section id="projects" class="projects sec-pad">
+      <div class="main-container">
+       
+        <div id="Github-section">
+          <div class="calendar">
+              Loading the data just for you.
+          </div>
+          <div >
+            <p>&nbsp;<img class="Github-stats stats-1"
+              src="https://github-readme-stats.vercel.app/api?username=Akash07032001&show_icons=true&locale=en"
+              alt="Akash07032001" /></p>
+      <p><img class="Github-stats stats-2" background-color="black"
+              src="https://github-readme-streak-stats.herokuapp.com/?user=Akash07032001&"
+              alt="Akash07032001" /></p>
+          </div>
+      </div>
+
+        
+      </div>
+    </section>
+
     <section id="contact" class="contact sec-pad dynamicBg">
       <div class="main-container">
         <h2 class="heading heading-sec heading-sec__mb-med">
@@ -410,3 +495,5 @@ about coding with a specialization in Java,SQL and Data Structure and Algoritham
     <script src="./index.js"></script>
   </body>
 </html>
+<script src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js">
+</script>

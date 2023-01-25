@@ -702,3 +702,71 @@ textarea {
   to {
     opacity: 0;
     top: 27px; } }
+    
+
+ .about_me_img{
+  margin-top: 90px;
+  height: 30%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 30%;
+  border-radius: 50%;
+  border: 2px solid white;
+
+
+
+ }   
+ .akash_img{
+  display: flex;
+  justify-content: center;
+  
+ }
+ .project_div{
+  display: flex;
+  justify-content:space-evenly;
+  width: 90%;
+ }
+ .project_tech{
+  font-size: 2rem;
+ }
+ .calendar+div{
+
+  display: flex;
+ 
+  margin-top: 20px;
+  justify-content: space-evenly;
+
+ }
+ .calendar{
+  width: 90%;
+  padding: 10px 10px;
+ }
+ @media screen And (max-width:768px) {
+  .calendar+div{
+
+    flex-direction: column;
+    
+  }
+  .calendar+div img {
+    width: 350px;
+    align-items: center;
+    margin-top: -0.5rem;
+}
+  
+ }
+ @media screen and (min-width:992px) and (max-width:1240px) {
+  .calendar+div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+ }
+ @media screen  and (min-width:768px) and (max-width:991px) {
+  .calendar+div {
+    width: 350px;
+    align-items: center;
+    margin-top: -0.5rem;
+}
+ }
+
