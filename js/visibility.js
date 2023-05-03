@@ -1,7 +1,7 @@
 document.addEventListener("visibilitychange", function(){
     if(document.visibilityState == "visible")
     {
-        document.title = "ANSHUL | SOFTWARE DEVELOPER";
+        document.title = "AKASH | SOFTWARE DEVELOPER";
         
     }
     else{
