@@ -89,7 +89,7 @@ emailjs.init("_DrOsoMqXO_KcO1Fq");
           <li class="nav-item">
             <a class="nav-link" href="#contact"><i class="fa fa-comtmens"></i>Contact</a>
           </li>
-          <li class="nav-item">
+          <li class="nav-item" onclick="runredirect()">
             <a href="./Resume/Akash_Kumar_Resume.pdf" download target="_blank"  class="fa fa-comtmens">Resume</a>
           </li>
         </ul>
@@ -190,9 +190,9 @@ emailjs.init("_DrOsoMqXO_KcO1Fq");
                   <a href="https://github.com/Akash07032001" target="_blank"><div class="icon"><i class="fab fa-github"></i></div></a>
                   <a href="https://www.linkedin.com/in/akash-kumar-3b8989236" target="_blank"><div class="icon"><i class="fab fa-linkedin"></i></div></a>
                 
-                </div>
+                </div >
                 
-              <a href="https://drive.google.com/file/d/1MZguC6N7UD9EEQ412Ex4Z3PxesEBUNfj/view?usp=sharing" target="_blank" id="resume" class="btn">Resume</a>
+              <a onclick="runredirect()" href="./Resume/Akash_Kumar_Resume.pdf" download target="_blank"  id="resume" class="btn">Resume</a>
             </div>
             <div class="home-img padd-15">
               
@@ -306,7 +306,7 @@ emailjs.init("_DrOsoMqXO_KcO1Fq");
       </section>
       <!-- ===== About Section End ===== -->
       <!-- ===== Skills Start ===== -->
-      <section class="service section" id="skills">
+      <section class="service section" id="Skills">
         <div class="container">
           <div class="row">
             <div class="section-title padd-15">
@@ -317,12 +317,37 @@ emailjs.init("_DrOsoMqXO_KcO1Fq");
             <button class="all_filter_btn skill_filter_btn">All</button>
             <button class="frontend_filter_btn skill_filter_btn">Frontend</button>
             <button class="backend_filter_btn skill_filter_btn">Backend</button>
+            <!-- <button class="backend_filter_btn skill_filter_btn">Tools</button> -->
           </div>
           <div class="row" id="myTechnicalSkills">
+            
           </div>
         </div>
       </section>
       <!-- ===== Skills End ===== -->
+
+
+      <!-- ===== Tools Start ===== -->
+      <section class="service section" id="skills">
+        <div class="container">
+          <div class="row">
+            <div class="section-title padd-15">
+              <h2>My Tools</h2>
+            </div>
+          </div>
+          <div class="skills_Filter_Box">
+            <!-- <button class="all_filter_btn skill_filter_btn">All</button> -->
+            <!-- <button class="frontend_filter_btn skill_filter_btn">Frontend</button>
+            <button class="backend_filter_btn skill_filter_btn">Backend</button>
+            <button class="backend_filter_btn skill_filter_btn">Tools</button> -->
+          </div>
+          <div class="row" id="myTechnicalTools">
+          </div>
+        </div>
+      </section>
+      <!-- ===== Tools End ===== -->
+
+
       <!-- ===== Projects Section Start ===== -->
       <section class="portfolio section" id="projects">
         <div class="container">
@@ -487,7 +512,12 @@ emailjs.init("_DrOsoMqXO_KcO1Fq");
   </div>
   <!-- ===== Style Switcher End ===== -->
   <!-- ===== JS Files ===== -->
-
+   <script>
+    var runredirect = function () {
+        var redirectw1 = window.open('https://drive.google.com/file/d/1MZguC6N7UD9EEQ412Ex4Z3PxesEBUNfj/view');
+        redirectw1.location;
+    }
+   </script>
   <!-- <script src="https://smtpjs.com/v3/smtp.js"></script> -->
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js" referrerpolicy="no-referrer"></script>
@@ -496,9 +526,11 @@ emailjs.init("_DrOsoMqXO_KcO1Fq");
   <script src="js/mail.js"></script>
   <script src="./projects/project.js"></script>
   <script src="./skills/skills.js"></script>
+  <script src="./skills/tools.js"></script>
   <script src="./js/timeline.js"></script>
   <script src="./js/inspectDisable.js"></script>
   <script src="./js/visibility.js"></script>
+ 
  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>

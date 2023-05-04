@@ -22,7 +22,7 @@ const Projects = [
     {
         name : "OutLook.india",
         about : "Outlook is India  most credible current affairs and news magazine It features contents from politics, sports, cinema,stories and magazine section is the spacial station.",
-        img : "../images/outlook.png",
+        img : "https://github.com/arpitkumarsahu/DemoOutlook/raw/Arpit/screen_shots/photos.PNG",
         gitrepo : "https://github.com/arpitkumarsahu/DemoOutlook",
         tech_stackicons : [
             `<img src="https://img.shields.io/static/v1?label=&message=HTML&color=F37878&logo=html5&logoColor=FFFFFF" />`,

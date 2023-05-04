@@ -44,11 +44,13 @@ const skills = [
         icon_url : "../images/postman.png",
         category : ["all", "backend"]
     },
-    {
+    
+     {
         name: "AWS",
         icon_url : "../images/aws.png",
         category : ["all"]
     }
+   
    
 ]
 
